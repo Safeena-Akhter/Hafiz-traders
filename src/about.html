@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hafiz Traders | About Us</title>
+
+  <!-- ✅ Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  
+<style>
+  body {
+   font-family: 'Inter', sans-serif;
+    
+  }
+  h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+  </style>
+  <!-- ✅ Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="flex justify-between items-center w-11/12 mx-auto py-3">
+      <!-- Logo -->
+             
+      <div class="flex items-center space-x-2">
+        <img src="logo.png" alt="" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold text-[#BF3100]">Hafiz Traders</h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="index.html" class="hover:text-[#BF3100]">Home</a></li>
+        <li><a href="#about" class="hover:text-[#BF3100]">About</a></li>
+        <li><a href="index.html#businesses" class="hover:text-[#BF3100]">Businesses</a></li>
+        <li><a href="index.html#clients" class="hover:text-[#BF3100]">Clients</a></li>
+        <li><a href="contact.html" class="hover:text-[#BF3100]">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden flex-col bg-white space-y-4 py-4 shadow-md items-center md:hidden">
+      <a href="index.html" class="hover:text-[#BF3100] font-medium">Home</a>
+      <a href="#about" class="hover:text-[#BF3100] font-medium">About</a>
+      <a href="index.html#businesses" class="hover:text-[#BF3100] font-medium">Businesses</a>
+      <a href="index.html#clients" class="hover:text-[#BF3100] font-medium">Clients</a>
+      <a href="contact.html" class="hover:text-[#BF3100] font-medium">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== ABOUT SECTION ===== -->
+   <main class="mt-10">
+   
+  <section id="about" class="pt-28 pb-16 w-11/12 mx-auto max-w-6xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-[#BF3100] mb-4 text-center">About Us</h2>
+    <p class="text-gray-700 text-center max-w-3xl mx-auto mb-10">
+      Hafiz Traders is a trusted name in food supply and beverage distribution across Pakistan. 
+      Established by experienced business owners, the company continues to grow through dedication, professionalism, and strong client partnerships.
+    </p>
+
+    <!-- Leadership -->
+    <div class="bg-white p-6 rounded-2xl shadow-md mb-10">
+      <h3 class="text-2xl font-semibold text-[#BF3100] mb-4 text-center">Our Leadership Team</h3>
+      <p class="text-center mb-10">Guided by experience, driven by vision — our leaders power Hafiz Traders’ success.</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <li class="p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md">
+          <strong>Haji Maqbool Elahi</strong><br>
+          <span class="text-gray-600">Founder & Owner</span>
+        </li>
+        <li class="p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md">
+          <strong>Muhammad Kashif</strong><br>
+          <span class="text-gray-600">Co-Owner</span>
+        </li>
+        <li class="p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md">
+          <strong>Muhammad Wahab</strong><br>
+          <span class="text-gray-600">Partner / Investor</span>
+        </li>
+        <li class="p-4 bg-gray-50 rounded-xl shadow-sm hover:shadow-md">
+          <strong>Umair Ul Hassan</strong><br>
+          <span class="text-gray-600">Partner / Investor</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-[#BF3100] mb-2">Our Mission</h3>
+        <p class="text-gray-700">To provide top-quality and timely distribution services across the food and beverage industries.
+<br>We aim to strengthen Pakistan’s supply chain with reliability, innovation, and customer satisfaction at our core.<br>Through dedication and teamwork, we ensure every delivery reflects our promise of excellence and trust.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-[#BF3100] mb-2">Our Vision</h3>
+        <p class="text-gray-700">To become Pakistan’s most reliable and respected trading company, setting new standards in quality and service.<br>
+We envision a future where innovation drives efficiency, and integrity shapes every partnership we build.<br>
+Our goal is to create lasting impact — empowering businesses, communities, and the nation’s food ecosystem.</p>
+      </div>
+    </div>
+  </section>
+</main>
+  
+  <!-- ====== FOOTER ====== -->
+<footer id="footer" class="bg-[#161616] text-white py-12 text-center relative overflow-hidden">
+  <div class="footer-container flex flex-wrap justify-around gap-10 max-w-6xl mx-auto px-4">
+    <!-- About Section -->
+    <div class="footer-section min-w-[250px]">
+      <h3 class="text-[#F5BB00] text-lg font-semibold mb-3 relative after:block after:w-[50px] after:h-[3px] after:bg-[#F5BB00] after:mx-auto after:mt-2 after:rounded">
+        About Us
+      </h3>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        Hafiz Traders is one of Pakistan’s trusted trading companies, offering
+        reliable supply chain and distribution solutions in the food and beverage industry.
+      </p>
+      <div class="social-links flex justify-center gap-3 mt-4">
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#F5BB00] hover:bg-[#F5BB00] hover:text-[#BF3100] transition-all duration-300">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#F5BB00] hover:bg-[#F5BB00] hover:text-[#BF3100] transition-all duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#F5BB00] hover:bg-[#F5BB00] hover:text-[#BF3100] transition-all duration-300">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section min-w-[250px]">
+      <h3 class="text-[#F5BB00] text-lg font-semibold mb-3 relative after:block after:w-[50px] after:h-[3px] after:bg-[#F5BB00] after:mx-auto after:mt-2 after:rounded">
+        Quick Links
+      </h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="text-gray-300 hover:text-[#F5BB00] transition">Home</a></li>
+        <li><a href="about.html" class="text-gray-300 hover:text-[#F5BB00] transition">About</a></li>
+        <li><a href="index.html" class="text-gray-300 hover:text-[#F5BB00] transition">Businesses</a></li>
+        <li><a href="index.html" class="text-gray-300 hover:text-[#F5BB00] transition">Clients</a></li>
+        <li><a href="contact.html" class="text-gray-300 hover:text-[#F5BB00] transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section min-w-[250px]">
+      <h3 class="text-[#F5BB00] text-lg font-semibold mb-3 relative after:block after:w-[50px] after:h-[3px] after:bg-[#F5BB00] after:mx-auto after:mt-2 after:rounded">
+        Contact Us
+      </h3>
+      <p class="text-gray-300 text-sm">📍 Hafiz Traders, Lahore, Pakistan</p>
+      <p class="text-gray-300 text-sm">📞 +92 300 1234567</p>
+      <p class="text-gray-300 text-sm">✉️ info@hafiztraders.com</p>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom border-t border-white/10 mt-10 pt-5">
+    <p class="text-gray-400 text-sm hover:text-[#F5BB00] transition">
+      © 2025 Hafiz Traders. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+  <!-- ===== JS: Toggle Mobile Menu ===== -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const icon = menuBtn.querySelector('i');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-xmark');
+    });
+  </script>
+
+</body>
+</html>

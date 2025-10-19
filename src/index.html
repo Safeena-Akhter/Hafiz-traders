@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hafiz Traders</title>
+   
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  *{
+     font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+  body.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  body.fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  /* ===== Scroll Section Animations ===== */
+  .section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== Active Nav Link ===== */
+  .nav-links a.active {
+    color: #BF3100;
+    font-weight: 600;
+  }
+  </style>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- ====== HEADER / NAVBAR ====== -->
+  <header class="shadow-md bg-white fixed w-full top-0 z-50">
+    <nav class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+  <div class="flex justify-between items-center w-11/12 mx-auto py-3">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+        <img src="logo.png" alt="" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold text-[#BF3100]">Hafiz Traders</h1>
+      </div>
+
+    <!-- Desktop Menu -->
+    <ul id="nav-links" class="hidden md:flex space-x-6 text-gray-700 font-medium">
+      <li><a href="#home" class="hover:text-[#BF3100]">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#BF3100]">About</a></li>
+      <li><a href="#businesses" class="hover:text-[#BF3100]">Businesses</a></li>
+      <li><a href="#clients" class="hover:text-[#BF3100]">Clients</a></li>
+      <li><a href="contact.html" class="hover:text-[#BF3100]">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-gray-800 text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <ul id="mobile-menu" class="hidden flex-col items-center space-y-4 pb-4 text-gray-700 font-medium bg-white shadow-md md:hidden">
+    <li><a href="#home" class="hover:text-[#BF3100]">Home</a></li>
+    <li><a href="about.html" class="hover:text-[#BF3100]">About</a></li>
+    <li><a href="#businesses" class="hover:text-[#BF3100]">Businesses</a></li>
+    <li><a href="#clients" class="hover:text-[#BF3100]">Clients</a></li>
+    <li><a href="contact.html" class="hover:text-[#BF3100]">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+  </header>
+<main>
+  <!-- ====== HOME ====== -->
+  <section id="home" class="pt-24 bg-gray-50">
+    <div class="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Trusted Traders in <span class="text-[#BF3100]">Food Supply & Distribution</span>
+        </h1>
+        <p class="text-lg mb-6">Providing quality poultry and beverage distribution across Pakistan.</p>
+        <a href="#businesses" class="inline-block bg-[#F5BB00] text-white px-6 py-3 rounded-lg font-medium border hover:bg-[#F5BB00]/80 hover:border-[#F5BB00]/100 transition">Explore Our Businesses</a>
+
+        <div class="flex gap-8 mt-8 text-center">
+          <div>
+            <span class="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
+            <p class="text-sm">5.0 Rating</p>
+          </div>
+          <div>
+            <strong class="text-2xl">7+</strong>
+            <p class="text-sm">Businesses trust us</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 text-center">
+        <div class="p-4 bg-white rounded-lg shadow-sm border hover:border-black">
+          🥚 <br><strong>Premium Quality</strong><p>Fresh Eggs delivered daily.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm border hover:border-black">
+          🚀 <br><strong>Fast Delivery</strong><p>24/7 service across cities.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm border hover:border-black">
+          🤝 <br><strong>Strategic Partners</strong><p>Working with Food Panda & more.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm border hover:border-black">
+          📍 <br><strong>Wide Coverage</strong><p>Covering 5+ major cities.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm border hover:border-black">
+          🌟 <br><strong>Excellence</strong><p>Commitment to quality.</p>
+        </div>
+        <div class="p-4 bg-white rounded-lg shadow-sm border hover:border-black">
+          👜 <br><strong>Business Solutions</strong><p>Innovative Approach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BUSINESSES ====== -->
+  <section id="businesses" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#BF3100]">Our Businesses</h2>
+      <p class="text-center mb-10">From farms to markets — we deliver excellence at every step of the supply chain.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 bg-gray-50 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-2">1. Poultry & Food Supply (Egg Distribution)</h3>
+          <p>We manage the complete egg distribution chain — from farms to packing to delivery...</p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold mb-2">2. Next Cola Agency (Exclusive Distribution)</h3>
+          <p>Hafiz Traders proudly holds the exclusive distribution rights for Next Cola...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CLIENTS ====== -->
+  <section id="clients" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-[#BF3100]">Our Clients</h2>
+      <p class="mb-10">We’re proud to serve some of Pakistan’s most trusted brands and business partners.</p>
+      <div class="grid sm:grid-cols-2 gap-8 justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold mb-4">English Biscuit Factory (EBM)</h4>
+          <img src="biscuit.png" alt="EBM" class="mx-auto h-24">
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold mb-4">Distributors & Wholesale Partners</h4>
+          <img src="wholeseller.png" alt="Wholeseller" class="mx-auto h-24">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- ====== FOOTER ====== -->
+<footer id="footer" class="bg-[#161616] text-white py-12 text-center relative overflow-hidden">
+  <div class="footer-container flex flex-wrap justify-around gap-10 max-w-6xl mx-auto px-4">
+    <!-- About Section -->
+    <div class="footer-section min-w-[250px]">
+      <h3 class="text-[#F5BB00] text-lg font-semibold mb-3 relative after:block after:w-[50px] after:h-[3px] after:bg-[#F5BB00] after:mx-auto after:mt-2 after:rounded">
+        About Us
+      </h3>
+      <p class="text-gray-300 text-sm leading-relaxed">
+        Hafiz Traders is one of Pakistan’s trusted trading companies, offering
+        reliable supply chain and distribution solutions in the food and beverage industry.
+      </p>
+      <div class="social-links flex justify-center gap-3 mt-4">
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#F5BB00] hover:bg-[#F5BB00] hover:text-[#BF3100] transition-all duration-300">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#F5BB00] hover:bg-[#F5BB00] hover:text-[#BF3100] transition-all duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#F5BB00] hover:bg-[#F5BB00] hover:text-[#BF3100] transition-all duration-300">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section min-w-[250px]">
+      <h3 class="text-[#F5BB00] text-lg font-semibold mb-3 relative after:block after:w-[50px] after:h-[3px] after:bg-[#F5BB00] after:mx-auto after:mt-2 after:rounded">
+        Quick Links
+      </h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="text-gray-300 hover:text-[#F5BB00] transition">Home</a></li>
+        <li><a href="about.html" class="text-gray-300 hover:text-[#F5BB00] transition">About</a></li>
+        <li><a href="#businesses" class="text-gray-300 hover:text-[#F5BB00] transition">Businesses</a></li>
+        <li><a href="#clients" class="text-gray-300 hover:text-[#F5BB00] transition">Clients</a></li>
+        <li><a href="contact.html" class="text-gray-300 hover:text-[#F5BB00] transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section min-w-[250px]">
+      <h3 class="text-[#F5BB00] text-lg font-semibold mb-3 relative after:block after:w-[50px] after:h-[3px] after:bg-[#F5BB00] after:mx-auto after:mt-2 after:rounded">
+        Contact Us
+      </h3>
+      <p class="text-gray-300 text-sm">📍 Hafiz Traders, Lahore, Pakistan</p>
+      <p class="text-gray-300 text-sm">📞 +92 300 1234567</p>
+      <p class="text-gray-300 text-sm">✉️ info@hafiztraders.com</p>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom border-t border-white/10 mt-10 pt-5">
+    <p class="text-gray-400 text-sm hover:text-[#F5BB00] transition">
+      © 2025 Hafiz Traders. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+<script>
+  // ===== Active Link Highlight on Scroll =====
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((a) => {
+      a.classList.remove("active");
+      if (a.getAttribute("href") === "#" + current) {
+        a.classList.add("active");
+      }
+    });
+  });
+
+  // ===== Mobile Menu Toggle =====
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const icon = menuBtn?.querySelector("i");
+
+  if (menuBtn) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("flex");
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-xmark");
+    });
+  }
+
+  // ===== Smooth Scroll to Section =====
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+
+  // ===== Simple Contact Form Alert =====
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you for contacting Hafiz Traders! We'll get back to you soon.");
+      e.target.reset();
+    });
+  }
+
+  // ===== Scroll Reveal Animation =====
+  const sectionsToShow = document.querySelectorAll(".section");
+
+  function revealSections() {
+    const triggerBottom = window.innerHeight * 0.85;
+    sectionsToShow.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < triggerBottom) {
+        section.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealSections);
+  window.addEventListener("load", revealSections);
+
+  // ===== Intersection Observer (smooth fade-in on scroll) =====
+  document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+    const options = { threshold: 0.2 };
+
+    const revealOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => revealOnScroll.observe(section));
+  });
+
+  // ===== Smooth Page Fade-In on Load =====
+  window.addEventListener("load", () => {
+    document.body.classList.add("fade-in");
+  });
+
+  // ===== Smooth Page Fade-Out on Navigation =====
+  document.querySelectorAll("a").forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href && !href.startsWith("#") && !href.startsWith("mailto") && !href.startsWith("tel")) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const url = this.getAttribute("href");
+        document.body.classList.remove("fade-in");
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500);
+      });
+    }
+  });
+</script>
+</body>
+</html>
