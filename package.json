@@ -1,7 +1,7 @@
 {
   "name": "tailwindcss-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A modern, fully responsive business website for **Hafiz Traders** — a trusted name in food supply and beverage distribution across Pakistan.  \r This project is built using **HTML**, **Tailwind CSS**, and **JavaScript**, focused on performance, clarity, and a professional user experience.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,19 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.14",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.10",
     "tailwindcss": "^4.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Safeena-Akhter/Hafiz-traders.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Safeena-Akhter/Hafiz-traders/issues"
+  },
+  "homepage": "https://github.com/Safeena-Akhter/Hafiz-traders#readme"
 }
