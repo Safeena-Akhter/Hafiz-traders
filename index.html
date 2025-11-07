@@ -45,7 +45,131 @@
     color: #BF3100;
     font-weight: 600;
   }
+  @media (max-width: 640px) {
+  /* Hide desktop nav, show mobile menu button */
+  #nav-links {
+    display: none;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  #mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  #mobile-menu.flex {
+    display: flex;
+  }
+
+  /* Stack home section columns vertically */
+  #home .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Business section: single column */
+  #businesses .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Clients grid: single column */
+  #clients .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Footer: stack vertically */
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ========== Medium screens (≥768px) ========== */
+@media (min-width: 768px) {
+  /* Desktop nav visible */
+  #nav-links {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  /* Hide mobile menu button */
+  #menu-btn {
+    display: none;
+  }
+
+  /* Home section: 2-column grid */
+  #home .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  /* Businesses: 2-column grid */
+  #businesses .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Clients section: 2-column layout */
+  #clients .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* ========== Large screens (≥1024px) ========== */
+@media (min-width: 1024px) {
+  /* Future Enhancements: 3-column grid */
+  #future .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Footer: space evenly across width */
+  footer .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  /* Make logo and nav inline */
+  nav .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* ========== Extra Large screens (≥1280px) ========== */
+@media (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
   </style>
+
+  
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
